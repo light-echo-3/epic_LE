@@ -17,6 +17,7 @@ import java.util.List;
 import me.weishu.epic.samples.tests.TestCase;
 import me.weishu.epic.samples.tests.TestManager;
 import me.weishu.epic.samples.tests.TestSuite;
+import me.weishu.epic.samples.tests.TestThreadHook;
 
 public class MainActivity extends Activity {
 
@@ -37,6 +38,16 @@ public class MainActivity extends Activity {
         ExpandableListAdapter adapter = new MyAdapter();
         listView.setAdapter(adapter);
 
+        testThread();
+    }
+
+    private void testThread() {
+        findViewById(R.id.testThreadHook).setOnClickListener(v -> {
+            TestThreadHook.hookAllConstructorsAndHookRun();
+        });
+        findViewById(R.id.testThreadInvoke).setOnClickListener(v -> {
+            TestThreadHook.testThreadInvoke();
+        });
     }
 
     private class MyAdapter extends BaseExpandableListAdapter {
