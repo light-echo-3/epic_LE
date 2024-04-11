@@ -26,12 +26,14 @@ public class VoidType extends TestCase {
         DexposedBridge.findAndHookMethod(ReturnTypeTarget.class, "returnVoid", new XC_MethodHook() {
             @Override
             protected void beforeHookedMethod(MethodHookParam param) throws Throwable {
+                Log.d(TAG, "------beforeHookedMethod: ");
                 super.beforeHookedMethod(param);
                 callBefore = true;
             }
 
             @Override
             protected void afterHookedMethod(MethodHookParam param) throws Throwable {
+                Log.d(TAG, "------afterHookedMethod: ");
                 super.afterHookedMethod(param);
                 callAfter = true;
             }

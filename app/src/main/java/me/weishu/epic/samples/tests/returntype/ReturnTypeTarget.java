@@ -10,7 +10,7 @@ public class ReturnTypeTarget {
     private static final String TAG = "ReturnTypeTarget";
 
     public static void returnVoid() {
-        Log.d(TAG, "returnVoid() called");
+        Log.d(TAG, "------returnVoid() called");
     }
 
     public static byte returnByte(byte b) {
