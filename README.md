@@ -2,7 +2,8 @@
 [![Join the chat at https://gitter.im/android-hacker/epic](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/android-hacker/epic?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)   
 
 [中文文档入口](README_cn.md "中文")  
-[我的文档入口](README_cn_mine.md "中文")
+
+[我的文档入口](README_cn_mine.md "中文")  
 
 What is it?
 -----------
