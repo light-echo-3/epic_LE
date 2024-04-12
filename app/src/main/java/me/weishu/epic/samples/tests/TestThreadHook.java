@@ -5,6 +5,10 @@ import android.util.Log;
 import de.robv.android.xposed.DexposedBridge;
 import de.robv.android.xposed.XC_MethodHook;
 
+/***
+ * java_lang_Thread.cc
+ * java_lang_Thread.h
+ */
 public class TestThreadHook {
     private static final String TAG = "------TestThreadHook";
 
@@ -51,12 +55,12 @@ public class TestThreadHook {
     }
 
     public static void testThreadInvoke() {
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                Log.d(TAG, "run: thread 正常执行");
-            }
-        }, "test-new-thread-类").start();
+//        new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                Log.d(TAG, "run: thread 正常执行");
+//            }
+//        }, "test-new-thread-类").start();
 
         new Thread("test-new-thread—子类") {
             @Override

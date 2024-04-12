@@ -6,3 +6,10 @@
 
 进度：
 dynamic callee-side rewriting
+
+## hook线程方案
+没有必要epic这样检测线程。
+直接xHook art.so中 java.lang.Thread#nativeCreate 对应的函数即可。
+[java_lang_Thread.cc]  
+art::Thread_nativeCreate
+[java_lang_Thread.h]
