@@ -16,3 +16,7 @@
 [java_lang_Thread.cc]  
 art::Thread_nativeCreate
 [java_lang_Thread.h]
+
+
+## TODO
+trampoline实现细节，可参考[inline hook实现](https://github.com/light-echo-3/Android-Inline-Hook_LE)
